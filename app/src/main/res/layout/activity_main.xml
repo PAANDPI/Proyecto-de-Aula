@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/losgonawi"
+        android:transitionName="logoImagen"></ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abel"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:text="Bienvenido a Ñawi"
+        android:textAlignment="center"
+        android:textColor="#353333"
+        android:textSize="40sp"
+        android:transitionName="textos"
+        tools:ignore="RtlCompat">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abel"
+        android:paddingLeft="20dp"
+        android:text="Iniciar sesión para continuar"
+        android:textSize="20sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_mail"
+            android:fontFamily="@font/abel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Email"
+            android:textColorHint="#403E3D">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:passwordToggleEnabled="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_pass"
+            android:fontFamily="@font/abel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Coloque password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/colorPrimary">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:height="60dp"
+        android:backgroundTint="#4E9851"
+        android:fontFamily="@font/abel"
+        android:text="Login"
+        android:textAlignment="textStart"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/enter"></Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="#70C373"
+            android:fontFamily="@font/abel"
+            android:isScrollContainer="false"
+            android:text="Google"
+            android:textAlignment="textStart"
+            android:textColor="#3A3A3A"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            app:icon="@drawable/google2"
+            app:iconGravity="end"
+            app:iconSize="50dp"
+            app:iconTint="#2B2A2A" />
+
+        <Button
+            android:id="@+id/btn_registrar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#FFC107"
+            android:padding="5dp"
+            android:text="Registrarme"
+            android:textAlignment="textStart"
+            android:textColor="#3E3D3D"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            app:icon="@drawable/register"
+            app:iconGravity="textStart"
+            app:iconSize="30dp"
+            app:iconTint="#403F3F"></Button>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:backgroundTint="#FF5722"
+        android:onClick="goLoginPaciente"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Soy Paciente"
+        android:textAlignment="textStart"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/caecus" />
+
+    <Button
+        android:id="@+id/btn_recuperar"
+        android:layout_width="335dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="50dp"
+        android:background="#00DF5B51"
+        android:padding="5dp"
+        android:text="¿Olvidaste tu contraseña? recuperala aqui"
+        android:textColor="#494847"
+        android:textStyle="normal"></Button>
+
+
+</LinearLayout>

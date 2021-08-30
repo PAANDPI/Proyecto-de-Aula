@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".reconocerIdioma">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="135dp"
+        android:textAlignment="center"
+        app:srcCompat="@drawable/na_3" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abel"
+        android:gravity="center"
+        android:text="TRADUCTOR"
+        android:textAlignment="textStart"
+        android:textColor="#000"
+        android:textSize="40sp"
+        tools:ignore="RtlCompat"></TextView>
+
+    <TextView
+        android:id="@+id/bienvenido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abel"
+        android:gravity="center"
+        android:text="Bienvenido al traductor de texto"
+        android:textAlignment="textStart"
+        android:textColor="#3C3C3C"
+        android:textSize="20sp"
+        tools:ignore="RtlCompat"></TextView>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/abel"
+        android:text="El idioma es: ...."
+        android:textSize="20dp"></TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="5dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <EditText
+            android:id="@+id/etLangString"
+            android:layout_width="match_parent"
+            android:layout_height="127dp"
+            android:ems="10"
+
+            android:inputType="textMultiLine" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnCheckNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Traducir contenido"
+        app:cornerRadius="10dp"></Button>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="5dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <EditText
+            android:id="@+id/traducido"
+            android:layout_width="match_parent"
+            android:layout_height="152dp"
+            android:ems="10"
+
+            android:inputType="textMultiLine" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

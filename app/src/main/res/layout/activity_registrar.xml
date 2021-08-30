@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    tools:context=".RegistrarActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="275dp"
+        android:layout_height="160dp"
+        app:srcCompat="@drawable/na_3" />
+
+    <TextView
+        android:textSize="40sp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:fontFamily="@font/abel"
+        android:textAlignment="textStart"
+        android:text="Registrar cuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="RtlCompat">
+    </TextView>
+
+    <TextView
+        android:textSize="20sp"
+        android:textColor="#3C3C3C"
+        android:gravity="center"
+        android:fontFamily="@font/abel"
+        android:textAlignment="textStart"
+        android:text="Bienvenido al registro rapido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="RtlCompat">
+    </TextView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <EditText
+            android:id="@+id/et_mail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Email"
+            android:textColorHint="@color/colorPrimary"></EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="5dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <EditText
+            android:id="@+id/username"
+            android:textColorHint="@color/colorPrimary"
+            android:hint="Nombre de usario"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="5dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <EditText
+            android:id="@+id/numero"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="@color/colorPrimary"
+            android:hint="Número celular"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:layout_height="50dp">
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:passwordToggleEnabled="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_marginBottom="10dp"
+        android:textColorHint="@color/colorPrimary"
+        android:hint="Password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPassword">
+    </EditText>
+</com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="10dp"
+        app:passwordToggleEnabled="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <EditText
+            android:id="@+id/confirmar_pass"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="@color/colorPrimary"
+            android:hint="Confirmar password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword">
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_registrar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:text="Registrar"
+        android:textColor="#fff"
+        app:cornerRadius="10dp">
+    </Button>
+
+    <Button
+        android:id="@+id/existeCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAlignment="textEnd"
+        android:background="#00FFFFFF"
+        android:text="Ya tengo una cuenta"
+        android:textColor="#C57D67"
+        app:cornerRadius="10dp"></Button>
+
+
+
+
+</LinearLayout>

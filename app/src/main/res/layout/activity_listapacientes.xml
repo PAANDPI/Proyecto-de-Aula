@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".listapacientes">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="397dp"
+        android:layout_height="146dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="118dp"
+            android:layout_height="122dp"
+            android:layout_marginStart="276dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/listpaciente" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="261dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/abel"
+            android:gravity="center"
+            android:text="Lista pacientes"
+            android:textAlignment="textStart"
+            android:textColor="#000"
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="RtlCompat"></TextView>
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="262dp"
+            android:layout_height="49dp"
+            android:layout_marginBottom="28dp"
+            android:fontFamily="@font/abel"
+            android:gravity="center"
+            android:text="Recuerda siempre estar atento a tus seres queridos"
+            android:textAlignment="textStart"
+            android:textColor="#3C3C3C"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.029"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="RtlCompat"></TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listaRevista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="156dp"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/grupoFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        app:fab_addButtonColorNormal="#4CAF50"
+        app:fab_addButtonColorPressed="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/idAñadirPaciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="#FFFFFF"
+            android:onClick="goaddPaciente"
+            app:fab_colorNormal="#4CAF50"
+            app:fab_icon="@drawable/more"
+            app:fab_size="mini" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/idMapa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#4DB851"
+            android:onClick="goMapa"
+            app:fab_icon="@drawable/mapa"
+            app:fab_size="mini" />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/idMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#DC8AD137"
+            android:onClick="goHome"
+            app:fab_icon="@drawable/home"
+            app:fab_size="mini" />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+</androidx.constraintlayout.widget.ConstraintLayout>

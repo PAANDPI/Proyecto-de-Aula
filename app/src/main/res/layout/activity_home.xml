@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:onClick="goAll_Alertas"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_wave__5_"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="630dp"
+        android:layout_marginTop="75dp"
+        android:background="#00CA4343"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="122dp"
+                android:layout_height="107dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/losgonawi" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="289dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="124dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/abel"
+                android:text="Bienvenido!"
+                android:textColor="#1E1E1E"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="258dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="128dp"
+                android:fontFamily="@font/abel"
+                android:text="TextView"
+                android:textColor="#3E3C3C"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/textView11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="176dp"
+                android:layout_height="22dp"
+
+                android:layout_marginStart="128dp"
+                android:layout_marginTop="76dp"
+                android:fontFamily="@font/abel"
+                android:text="Empieza a cuidar a tu familiar"
+                android:textColor="#686868"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="468dp"
+            android:backgroundTint="#00FFFFFF"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="106dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnPaciente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="94dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#448C47"
+                    android:fontFamily="@font/abel"
+                    android:onClick="goLista"
+                    android:text="Lista de paciente"
+                    android:textAlignment="textStart"
+                    android:textIsSelectable="false"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/lista"
+                    app:iconSize="55dp" />
+
+                <Button
+                    android:id="@+id/btnMapa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="94dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#89BC4E"
+                    android:fontFamily="@font/abel"
+                    android:onClick="goMapa"
+                    android:text="Ir a Mapa"
+                    android:textAlignment="textStart"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/mapa"
+                    app:iconSize="55dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnAddPatiente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#4CAF50"
+                    android:fontFamily="@font/abel"
+                    android:onClick="addPaciente"
+                    android:text="Añadir paciente y dispositivo"
+                    android:textAlignment="textStart"
+                    android:textIsSelectable="false"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/iot"
+                    app:iconSize="55dp"
+                    app:iconTint="#FFFFFF" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnAlertas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#6AB385"
+                    android:fontFamily="@font/abel"
+                    android:onClick="goAll_Alertas"
+                    android:text="Alertas"
+                    android:textAlignment="textStart"
+                    android:textIsSelectable="false"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/notificaciones"
+                    app:iconSize="55dp" />
+
+                <Button
+                    android:id="@+id/btnPatiente"
+                    android:layout_width="162dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#AAB149"
+                    android:fontFamily="@font/abel"
+                    android:onClick="goReporte"
+                    android:text="Reporte"
+                    android:textAlignment="textStart"
+                    android:textIsSelectable="false"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/reporte"
+                    app:iconSize="55dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/aaaaa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="84dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#E3704C"
+                    android:fontFamily="@font/abel"
+                    android:onClick="goReconocimiento"
+                    android:text="Modulo Caecus"
+                    android:textAlignment="textStart"
+                    android:textIsSelectable="false"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/cam"
+                    app:iconSize="55dp" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="62dp">
+
+                <Button
+                    android:id="@+id/btnConfing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="10dp"
+                    android:backgroundTint="#E3A03F"
+                    android:text="Configuración"
+                    android:textIsSelectable="true"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/config"
+                    app:iconSize="25dp"
+                    app:iconTint="#FFFFFF"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btn_cerrar"
+                    android:layout_width="127dp"
+                    android:layout_height="46dp"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="#F44336"
+                    android:fontFamily="@font/abel"
+                    android:padding="10dp"
+                    android:text="Cerrar"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    app:cornerRadius="10dp"
+                    app:icon="@drawable/salir1"
+                    app:iconGravity="start"
+                    app:iconSize="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"></Button>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view8"
+        android:layout_width="0dp"
+        android:layout_height="79dp"
+        android:background="@drawable/ic_wave__6_"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

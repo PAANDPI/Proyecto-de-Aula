@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/elementoscaecus"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="1dp"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="475dp">
+
+        <View
+            android:id="@+id/view8"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:background="@drawable/ic_wave__5_"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgFotoReconocimientoD"
+            android:layout_width="379dp"
+            android:layout_height="251dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:src="@drawable/camara"
+            app:civ_border_color="#8BC34A"
+            app:civ_border_width="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.057" />
+
+        <TextView
+            android:id="@+id/txtUrlD"
+            android:layout_width="0dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/abel"
+            android:text="Prediction data"
+            android:textAlignment="center"
+            android:textColor="#515151"
+            android:textSize="20sp"
+            android:textStyle="normal|bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgFotoReconocimientoD" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="383dp"
+            android:layout_height="149dp"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtUrlD"
+            app:layout_constraintVertical_bias="0.51">
+
+            <TextView
+                android:id="@+id/txtNombreReconocimientoD"
+                android:layout_width="172dp"
+                android:layout_height="135dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/abel"
+                android:padding="10dp"
+                android:text="Recocimiento "
+                android:textAlignment="textStart"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TxtConfianzaD"
+                android:layout_width="196dp"
+                android:layout_height="126dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/abel"
+                android:padding="10dp"
+                android:text="Confianza"
+                android:textAlignment="textEnd"
+                android:textColor="#515151"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view14"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtUrlD"
+            app:layout_constraintVertical_bias="0.41000003" />
+
+        <View
+            android:id="@+id/view7"
+            android:layout_width="0dp"
+            android:layout_height="79dp"
+            android:background="@drawable/ic_wave__6_"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

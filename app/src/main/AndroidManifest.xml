@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.loginfirebasemail77">
+
+    <uses-permission android:name="android.permission.INTERNET " />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".Myapplicationfirebase"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".reportegeneral"></activity>
+        <activity android:name=".allAlertas" />
+        <activity android:name=".reconocimientoTimeReal" />
+        <activity android:name=".graficas" />
+        <activity android:name=".registroReconocimiento" />
+        <activity android:name=".cuentapaciente" />
+        <activity android:name=".reconocimiento" />
+        <activity android:name=".informaciondispositivo" />
+        <activity android:name=".tiemporeal" />
+        <activity android:name=".mapa" />
+        <activity android:name=".reconocerIdioma" />
+        <activity android:name=".animation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".editarpaciente" />
+        <activity android:name=".listapacientes" />
+        <activity android:name=".registrarpaciente" />
+        <activity android:name=".RegistrarActivity" />
+        <activity android:name=".recuperarPassActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC0vPHN0b2QcoPq2yE9eYUAibG3TWprZqA" />
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="ica" />
+    </application>
+
+</manifest>

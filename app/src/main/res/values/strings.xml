@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Ñawi</string>
+
+    <string name="invalid_mail">Ingrese mail valido</string>
+    <string name="invalid_password">Ingrese un password mayor a 6 digitos</string>
+
+    <string name="facebook_application_id" translatable="false">1422168584812968</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb1422168584812968</string>
+
+</resources>
+
+
+
+
+

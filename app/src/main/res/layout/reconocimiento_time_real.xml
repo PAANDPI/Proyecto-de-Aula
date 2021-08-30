@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CAF50"
+    android:backgroundTint="#4CAF50"
+    tools:context=".reconocimientoTimeReal">
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="262dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/abel"
+        android:gravity="center"
+        android:text="Recuerda siempre estar atento a sus seres queridos"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView45"
+        tools:ignore="RtlCompat"></TextView>
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="346dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/abel"
+        android:gravity="center"
+        android:text="Historial de modulo caecus"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlCompat"></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listaCaecus"
+        android:layout_width="0dp"
+        android:layout_height="649dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="76dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="28dp"
+        android:rotation="25"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/h2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#E3704C"
+    tools:context=".reconocimiento">
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="0dp"
+        android:layout_height="495dp"
+        android:background="@drawable/ic_caecus_3_"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="410dp"
+        android:layout_height="109dp"
+        android:background="@drawable/ic_caecus_1_"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bntChoosePicture"
+        android:layout_width="177dp"
+        android:layout_height="77dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FFA531"
+        android:text="Buscar imagen"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/galeria"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.964"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivPicture"
+        android:layout_width="299dp"
+        android:layout_height="259dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="148dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:src="@drawable/fotografia"
+        app:civ_border_color="#E47451"
+        app:civ_border_width="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="260dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/abel"
+        android:text="Bienvenidos al módulo Caecus"
+        android:textColor="#F3F3F3"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="292dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/abel"
+        android:text="Bienvenidos al módulo Caecus"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="91dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/losgo" />
+
+    <Button
+        android:id="@+id/btnOpenCamara"
+        android:layout_width="177dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#E3704C"
+        android:text="Camara"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/logocamara"
+        app:iconSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/abel"
+        android:text="Resultados  obtenidos"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPicture" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#00FFFFFF"
+        android:saveEnabled="false"
+        android:scaleType="center"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:tint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pregunta" />
+
+    <ListView
+        android:id="@+id/lstResult"
+        android:layout_width="305dp"
+        android:layout_height="161dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="124dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
