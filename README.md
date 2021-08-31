@@ -2,6 +2,9 @@
 ## SISTEMA PARA AYUDAR A LAS PERSONAS CON DISCAPACIDADES VISUALES A IDENTIFICAR OBJETOS
 ## APLICACIÓN MÓVIL
 
+# Dispositivo IoT
+![img](https://github.com/PAANDPI/Proyecto-de-Aula/blob/master/ImgApp/dispositivo-IoT.png)
+
 # Login
 ![img](https://github.com/PAANDPI/Proyecto-de-Aula/blob/master/ImgApp/1e.jpg)
 
