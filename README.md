@@ -8,6 +8,9 @@
 # Login
 ![img](https://github.com/PAANDPI/Proyecto-de-Aula/blob/master/ImgApp/1e.jpg)
 
+# Menú de la app
+![img](https://github.com/PAANDPI/Proyecto-de-Aula/blob/master/ImgApp/Menu.jpg)
+
 # Registro de paciente y dispositivo Part1
 ![img](https://github.com/PAANDPI/Proyecto-de-Aula/blob/master/ImgApp/2e.jpg)
 
